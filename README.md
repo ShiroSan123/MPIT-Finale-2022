@@ -5,7 +5,7 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ShiroSan123&layout=compact)](https://github.com/ShiroSan123/github-readme-stats)
 
-# MPIT SquadGame 2022
+# MPIT Final 2022
 Наш проект [Развивайся](«Classified») решает проблему отсутствия площадки инициатив НМЕ  у школьников (1-11 класс), родителей и педагогов с помощью информационного сервиса, который имеет возможность записываться на конкурсы, создавать и просмотривать мастер-классы, а так же пользователи смогут обмениваться своими знаниями.
 Инструменты: SublimeText, Visual Studio Code, Spotify
 ***
