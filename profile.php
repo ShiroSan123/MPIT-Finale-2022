@@ -24,12 +24,13 @@ $stroka = $result->fetch_assoc();
 </head>
 <body>
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top col-12 border-bottom" style="height: 8vh; background: white">
+	<header id="header" class="fixed-top col-12" style="height: 8vh; background: #7B7B7B">
 		<div class="col-12	">
 			<div class="row" style="margin-left: 0; margin-right: 0;">
 				<!-- Колонка логотипа -->
-				<div class="col-2" style="height: 8vh; padding-top: 1vh">
-					<img id="logo" class="" src="asset/img/logo.svg" id="logoMain" alt="" style="height: 6vh; margin-left: 0.3vw;">
+				<div class="col-2" style="height: 8vh; padding-top: 1vh; padding-top: 2vh;">
+					<!-- <img id="logo" class="" src="asset/img/logo.svg" id="logoMain" alt="" style="height: 6vh; margin-left: 0.3vw;"> -->
+					<input type="text" class="form-control">
 				</div>
 				<!-- Средняя колонка -->
 				<div class="col-8" style="height: 8vh; padding-top: 2vh;">
@@ -38,10 +39,10 @@ $stroka = $result->fetch_assoc();
 							<a href="index.php" class="text-dark" style="text-decoration: none; font-size: 1.3vw">Главная</a>
 						</div>
 						<div class="col-3 text-center">
-
+							<a href="indexCreate.php" class="text-dark" style="text-decoration: none; font-size: 1.3vw">Создать курс</a>
 						</div>
 						<div class="col-3 text-center">
-							
+							<a href="catalog.php" class="text-dark" style="text-decoration: none; font-size: 1.3vw">Каталог</a>
 						</div>
 						<div class="col-3 text-center">
 							
@@ -62,10 +63,27 @@ $stroka = $result->fetch_assoc();
 		</div>
 	</header>
 	<!-- End Header -->
-	<div class="col-10 rounded shadow-lg mx-auto" style="height: 60vh; margin-top: 15vh;">
+	<div class="col-10 rounded shadow-lg mx-auto" style="height: 10vh; margin-top: 15vh;">
 		<h1><?php echo $stroka['Login'] ?></h1>
 		<h2><?php echo $stroka['Password'] ?></h2>
 	</div>
+	<!-- ======= Footer ======= -->
+	<!-- <div class="col-12" style="height: 20vh; background: #C4C4C4; margin-top: 20vh;">
+		<div class="col-9 mx-auto" style="padding-top: 5vh;">
+			<div class="row">
+				<div class="col-2" style="height: 8vh; padding-top: 1vh;">
+					<img id="logo1" class="" src="asset/img/logos.svg" id="logoMain" alt="" style="height: 8vh">
+				</div>
+				<div class="col-9" style="height: 8vh; padding-top: 4vh;">
+					<p style="font-size: 1vw; font-weight: lighter;">2022 © Все права защищены</p>
+				</div>
+				<div class="col-1" style="height: 8vh; padding-top: 2vh;">
+					<img id="toTop" src="asset/img/arrowUp.svg" alt="" style="height: 5vh;">
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- End Footer -->
 	<script>
 		function Exit() {
 			window.location.href = 'index.php';
