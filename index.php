@@ -25,9 +25,9 @@ $stroka = $result->fetch_assoc();
 	<script type="text/javascript">
 </script>
 </head>
-<body>
+<body style="background-image: url(asset/img/Group43.svg); background-size: 100%;">
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top col-12" style="height: 8vh; background: #7B7B7B">
+	<header id="header" class="fixed-top col-12" style="height: 8vh; background: #F0F0F0">
 		<div class="col-12	">
 			<div class="row" style="margin-left: 0; margin-right: 0;">
 				<!-- Колонка логотипа -->
@@ -58,56 +58,76 @@ $stroka = $result->fetch_assoc();
 						<h4><a href="profile.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;"><?php echo $stroka['Login'] ?></a></h4>
 						<h4 style="margin-left: 2vw"><a href="logOut.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;">Выход</a></h4>
 					<?php } else {?>
-						<h4><a href="checkSign.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;">Войти</a></h4>
-						<h4 style="margin-left: 2vw"><a href="checkReg.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;">Зарегестрироваться</a></h4>
+						<button class="btn" onclick="CheckSign()" style="height: 4vh; font-size: 0.9vw; font-weight: 400; margin-left: 10vw; border-color: #33448F; border-radius: 1.3vh; border-width: 0.3vh;">Войти</button>
 					<?php } ?>
 				</div>
 			</div>
 		</div>
 	</header>
 	<!-- End Header -->
-	<div class="col-12" style="height: 100vh; background: #C4C4C4; padding-top: 20vh;padding-left: 10vh;">
-		<div class="col-6" style="height: 70vh; background: #E5E5E5">
-			
-		</div>
-	</div>
-	<div class="col-12" style="padding-bottom: 10vh;">
-		<div class="col-12" style="height: 117vh;background-image: url('asset/img/1.svg'); background-size: 100%; ">
-			<div class="col-8 mx-auto" style="padding-top: 48vh;">
-				<div class="row">
-					<div class="col-3 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
-					<div class="col-3 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
-					<div class="col-3 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
-				</div>
-			</div>
-			<div class="col-6 mx-auto" style="margin-top: 5vh;">
-				<div class="row">
-					<div class="col-4 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
-					<div class="col-4 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
-				</div>
+	<div class="col-12">
+		<div class="col-12" style="height: 100vh; padding-top: 20vh;padding-left: 10vh;">
+			<div class="col-8" style="height: 70vh;">
+				<h1 style="font-size: 7vh; font-family: monospace; font-weight: bold;">Найди себе друга для занятий!</h1>
+				<p style="font-size: 4vh; font-family: ; font-weight: 400;" class="col-7">Знакомьтесь с людьми в своём городе, а также со всего мира</p>
+				<button onclick="CheckReg()" class="btn text-white shadow-lg" style="background: #33448F; border-radius: 1.5vh; margin-top: 3vh; font-size: 3vh; font-weight: 300;">Зарегестрироваться</button>
 			</div>
 		</div>
-	</div>
-	<!-- ======= Footer ======= -->
-	<footer class="col-12 footer" style="height: 20vh; background: #C4C4C4; position: relative; bottom: 0">
-		<div class="col-9 mx-auto" style="padding-top: 5vh;">
+		<div class="col-12" style="height: 15vh; background-image: url(); background-size:  100%; ">
+			<div class="col-12" style="padding-bottom: 10vh; height: 117vh;">
+				<!-- <div class="col-8 mx-auto" style="padding-top: 50vh;">
+					<div class="row">
+						<div class="col-3 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
+						<div class="col-3 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
+						<div class="col-3 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
+					</div>
+				</div>
+				<div class="col-6 mx-auto" style="margin-top: 5vh;">
+					<div class="row">
+						<div class="col-4 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
+						<div class="col-4 mx-auto" style="height: 25vh; background: #E5E5E5;"></div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div class="col-11 mx-auto" style="margin-top: 140vh;">
 			<div class="row">
-				<div class="col-2" style="height: 8vh; padding-top: 1vh;">
-					<img id="logo1" class="" src="asset/img/logos.svg" id="logoMain" alt="" style="height: 8vh">
+				<div class="col-3 bg-secondary" style="height: 60vh; background-image: url(asset/img/LeftG.svg); background-size: 100%"></div>
+				<div class="col-6 text-center">
+					<h1 style="font-size: 5vh; font-weight: 300; color: white;">Выбери свою роль на сайте!</h1>
+					<p class="col-8 mx-auto" style="font-size: 3vh; color: white; font-weight: 300;">Сервис нацелен на педагогов, школьников и их родителей. Сайт Разивайся поможет учащимся найти кружок или же мероприятие по душе, а также сможет найти поддержку в реализации своих планов. Для учителей платформа также станет незаменимым помощником: просмотр/создание мастер-классов, реализация мероприятий, объявление об открытии кружка.</p>
 				</div>
-				<div class="col-9" style="height: 8vh; padding-top: 4vh;">
-					<p style="font-size: 1vw; font-weight: lighter;">2022 © Все права защищены</p>
-				</div>
-				<div class="col-1" style="height: 8vh; padding-top: 2vh;">
-					<img id="toTop" src="asset/img/arrowUp.svg" alt="" style="height: 5vh;">
-				</div>
+				<div class="col-3 bg-secondary" style="height: 60vh; background-image: url(asset/img/RightG.svg); background-size: 100%"></div>
 			</div>
 		</div>
-	</footer>
-	<!-- End Footer -->
+		<div class="col-12" style="height: 10vh;"></div>
+		<!-- ======= Footer ======= -->
+		<footer class="col-12 footer" style="height: 20vh; background: #1F2F7F; position: absolute; bottom: -375vh">
+			<div class="col-9 mx-auto" style="padding-top: 5vh;">
+				<div class="row">
+					<div class="col-2" style="height: 8vh; padding-top: 1vh;">
+						<img id="logo1" class="" src="asset/img/logos.svg" id="logoMain" alt="" style="height: 8vh">
+					</div>
+					<div class="col-9" style="height: 8vh; padding-top: 4vh;">
+						<p class="text-white" style="font-size: 1vw; font-weight: lighter;">2022 © Все права защищены</p>
+					</div>
+					<div class="col-1" style="height: 8vh; padding-top: 2vh;">
+						<img id="toTop" src="asset/img/arrowUp.svg" alt="" style="height: 5vh;">
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+	</div>
 	<script>
 		function Exit() {
 			window.location.href = 'index.php';
+		}
+		function CheckReg() {
+			window.location.href = 'CheckReg.php';
+		}
+		function CheckSign() {
+			window.location.href = 'CheckSign.php';
 		}
 	</script>
 </body>

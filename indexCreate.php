@@ -24,7 +24,7 @@ if ($_SESSION['id']==null) {
 </head>
 <body>
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top col-12" style="height: 8vh; background: #7B7B7B">
+	<header id="header" class="fixed-top col-12" style="height: 8vh; background: #F0F0F0">
 		<div class="col-12	">
 			<div class="row" style="margin-left: 0; margin-right: 0;">
 				<!-- Колонка логотипа -->
@@ -55,8 +55,7 @@ if ($_SESSION['id']==null) {
 						<h4><a href="profile.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;"><?php echo $stroka['Login'] ?></a></h4>
 						<h4 style="margin-left: 2vw"><a href="logOut.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;">Выход</a></h4>
 					<?php } else {?>
-						<h4><a href="checkSign.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;">Войти</a></h4>
-						<h4 style="margin-left: 2vw"><a href="checkReg.php" class="get-started-btn text-dark" style="text-decoration: none; font-size: 0.9vw; font-weight: bold;">Зарегестрироваться</a></h4>
+						<button class="btn" onclick="CheckSign()" style="height: 4vh; font-size: 0.9vw; font-weight: 400; margin-left: 10vw; border-color: #33448F; border-radius: 1.3vh; border-width: 0.3vh;">Войти</button>
 					<?php } ?>
 				</div>
 			</div>
